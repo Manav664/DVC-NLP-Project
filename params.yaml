@@ -1,1 +1,15 @@
 # This contains params to be used by the stages to train or predict
+prepare:
+  split: 0.3
+  seed: 2022
+  tag: <python>
+
+featurize:
+  max_features: 2500
+  n_grams: 3
+
+train:
+  seed: 2022
+  n_est: 500
+  min_split: 12
+  n_jobs: 2

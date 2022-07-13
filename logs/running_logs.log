@@ -1,0 +1,32 @@
+[2022-07-13 07:49:59,734: INFO: stage_01_prepare_data]: 
+********************
+[2022-07-13 07:49:59,734: INFO: stage_01_prepare_data]: >>>>> stage Prepare_data started <<<<<
+[2022-07-13 07:49:59,734: INFO: common]: yaml file: configs/config.yaml loaded successfully
+[2022-07-13 07:49:59,734: INFO: common]: yaml file: params.yaml loaded successfully
+[2022-07-13 07:49:59,750: INFO: common]: created directory at: artifacts\prepared
+[2022-07-13 07:50:03,776: INFO: stage_01_prepare_data]: >>>>> stage Prepare_data completed!<<<<<
+
+[2022-07-13 07:50:13,054: INFO: stage_02_featurization]: 
+********************
+[2022-07-13 07:50:13,054: INFO: stage_02_featurization]: >>>>> stage Featurization started <<<<<
+[2022-07-13 07:50:13,054: INFO: common]: yaml file: configs/config.yaml loaded successfully
+[2022-07-13 07:50:13,054: INFO: common]: yaml file: params.yaml loaded successfully
+[2022-07-13 07:50:13,054: INFO: common]: created directory at: artifacts\features
+[2022-07-13 07:50:13,359: INFO: common]: The input data frame artifacts\prepared\train.tsv size is (17536, 3) is read.
+[2022-07-13 07:50:43,186: INFO: data_mgmt]: The output matrix saved at artifacts\features\train.pkl of shape: (17536, 2502)
+[2022-07-13 07:50:43,351: INFO: common]: The input data frame artifacts\prepared\test.tsv size is (7464, 3) is read.
+[2022-07-13 07:50:48,189: INFO: data_mgmt]: The output matrix saved at artifacts\features\test.pkl of shape: (7464, 2502)
+[2022-07-13 07:50:48,741: INFO: stage_02_featurization]: >>>>> stage Featurization completed!<<<<<
+
+[2022-07-13 07:50:53,491: INFO: stage_03_train]: 
+********************
+[2022-07-13 07:50:53,491: INFO: stage_03_train]: >>>>> stage Training started <<<<<
+[2022-07-13 07:50:53,491: INFO: common]: yaml file: configs/config.yaml loaded successfully
+[2022-07-13 07:50:53,491: INFO: common]: yaml file: params.yaml loaded successfully
+[2022-07-13 07:50:53,491: INFO: common]: created directory at: artifacts\model
+[2022-07-13 07:50:53,527: INFO: stage_03_train]: input matrix size: (17536, 2502)
+[2022-07-13 07:50:53,527: INFO: stage_03_train]: X matrix size: (17536, 2500)
+[2022-07-13 07:50:53,527: INFO: stage_03_train]: Y matrix size or labels: (17536,)
+[2022-07-13 07:51:13,058: INFO: stage_03_train]: saved our model at: artifacts\model\model.pkl
+[2022-07-13 07:51:13,058: INFO: stage_03_train]: >>>>> stage Training completed!<<<<<
+
