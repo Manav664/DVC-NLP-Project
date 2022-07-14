@@ -19,7 +19,7 @@ jobs:
           cml runner \
           --cloud aws \
           --cloud-region us-east \
-          --cloud-type=t2.micro \
+          --cloud-type=t2.medium \
           --labels=cml-runner
  
   model-training:
