@@ -10,6 +10,13 @@ import math
 
 STAGE = "Evaluation"
 
+logging.basicConfig(
+    filename=os.path.join("logs", 'running_logs.log'), 
+    level=logging.INFO, 
+    format="[%(asctime)s: %(levelname)s: %(module)s]: %(message)s",
+    filemode="a"
+    )
+
 def evaluate(config_path : str, params_path : str):
     ## read config files
     config = read_yaml(config_path)
