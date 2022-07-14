@@ -8,8 +8,10 @@ ipykernel
 PyYAML
 tqdm
 dvc[s3]
+dvc
 Scipy
 Scikit-learn
 lxml
+boto3
 ### local packages -
 -e . # << uncomment this to install from setup.py
