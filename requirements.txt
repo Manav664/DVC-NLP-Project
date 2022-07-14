@@ -1,9 +1,15 @@
 ### dependency
+numpy
+joblib
+pandas
+sklearn
+mkdocs-material
+ipykernel
+PyYAML
 tqdm
 dvc
-pandas
-numpy
-PyYAML
-mkdocs-material
-## local packages -
+Scipy
+Scikit-learn
+lxml
+### local packages -
 -e . # << uncomment this to install from setup.py
