@@ -9,8 +9,6 @@ jobs:
     runs-on: [ubuntu-latest]
     steps:
       - uses: actions/checkout@v3
-        with:
-          ref: ${{ github.event.pull_request.head.sha }}
       - uses: iterative/setup-cml@v1
       - name: deploy
         env:
@@ -31,9 +29,6 @@ jobs:
  
     steps:
     - uses: actions/checkout@v3
-        with:
-          ref: ${{ github.event.pull_request.head.sha }}
- 
     - name: "automatic ci/cd"
       env:
         REPO_TOKEN: ${{ secrets.PERSONAL_ACCESS_TOKENS }}
