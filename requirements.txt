@@ -7,7 +7,7 @@ mkdocs-material
 ipykernel
 PyYAML
 tqdm
-dvc
+dvc[s3]
 Scipy
 Scikit-learn
 lxml
